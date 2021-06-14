@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function fun()
+        {
+            if(sel.value === "1")
+            document.getElementById('myh1').innerHTML='<p style="background-color : blue">hey change the color of text by selecting the desired colour from the dropdown list</p>'
+            if(sel.value === "2")
+            document.getElementById('myh1').innerHTML='<p style="background-color : green">hey change the color of text by selecting the desired colour from the dropdown list</p>'
+            if(sel.value === "3")
+            document.getElementById('myh1').innerHTML='<p style="background-color : yellow">hey change the color of text by selecting the desired colour from the dropdown list</p>'
+            if(sel.value === "4")
+            document.getElementById('myh1').innerHTML='<p style="background-color : red">hey change the color of text by selecting the desired colour from the dropdown list</p>'
+
+        }
+    </script>
+</head>
+<body>
+    <h1 id="myh1">hey change the color of page by selecting the desired colour from the dropdown list</h1>
+    <select id="sel">
+        <option>colors</option>
+        <option value="1">blue</option>
+        <option value="2">green</option>
+        <option value="3">yellow</option>
+        <option value="4">red</option>
+    </select>
+    <button type="button" onclick="fun()">go</button>
+</body>
+</html>
